@@ -18,4 +18,9 @@ Install a swap file on the NVIDIA Jetson Nano Developer Kit. This should help wi
 >
 > Note: If you enable swap on boot, you should also automount the drive that you're using
 
+<h2>Release Notes</h2>
+
+Initial Release April, 2019
+* L4T 32.1.0 (JetPack 4.2)
+* Tested on Jetson Nano
 

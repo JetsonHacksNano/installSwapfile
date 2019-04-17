@@ -4,13 +4,13 @@ Install a swap file on the NVIDIA Jetson Nano Developer Kit. This should help wi
 ### Setup Swap File
 > installSwapFile.sh - Create a swap file ; Use on external media like USB drive or SSD
 
-> usage: installSwapFile [[[-d directory ] [-s size] -a] | [-h]]
+> usage: installSwapFile.sh [[[-d directory ] [-s size] -a] | [-h]]
 >
 > -d | --dir [directoryname]   Directory to place swapfile (defaults to /mnt)
 >
 > -s | --size [gigabytes] (defaults to 6 )
 >
-> -a | --auto  Enable swap on boot in /etc/fstab (defaults enabled)
+> -a | --auto  Enable swap on boot in /etc/fstab (default: "Y")
 >
 > -h | --help  This message
 >
@@ -18,7 +18,24 @@ Install a swap file on the NVIDIA Jetson Nano Developer Kit. This should help wi
 >
 > Note: If you enable swap on boot, you should also automount the drive that you're using
 
+### Automount
+Automount a device given the label
+> autoMount.sh - Automount a device, useful for external media like USB drives
+
+> usage: autoMount.sh [ [-l label] | [-h]]
+> -l | --label  <labelname>   Label to lookup
+> -h | --help  This message
+>
+> Tool to help automount the device given from the label
+> The script looks up the device, mounting point and UUID for the given label
+> Optionally add it to /etc/fstab
+
 <h2>Release Notes</h2>
+
+v0.7 April 2019
+* Add Automount Support
+* L4T 32.1.0 (JetPack 4.2)
+* Tested on Jetson Nano
 
 Initial Release April, 2019
 * L4T 32.1.0 (JetPack 4.2)

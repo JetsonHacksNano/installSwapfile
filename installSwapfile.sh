@@ -62,7 +62,7 @@ if [ "$AUTOMOUNT" = "Y" ]; then
 	echo "Modifying /etc/fstab to enable on boot"
         SWAPLOCATION=$SWAPDIRECTORY"/swapfile"
         echo $SWAPLOCATION
-	sudo sh -c 'echo "'$SWAPLOCATION' none swap sw 0 0" >> /etc/fstab'
+	sudo sh -c 'echo "'$SWAPLOCATION' swap swap defaults 0 0" >> /etc/fstab'
 fi
 
 echo "Swap file has been created"

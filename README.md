@@ -23,11 +23,15 @@ Automount a device given the label
 > autoMount.sh - Automount a device, useful for external media like USB drives
 
 > usage: autoMount.sh [ [-l label] | [-h]]
+>
 > -l | --label  [labelname]   Label to lookup
+>
 > -h | --help  This message
 >
 > Example usage:
+>
 > $ ./shellScript.sh -l RaceUSB
+>
 > where RaceUSB is the label of the device mounted at /media/jetsonhacks/RaceUSB
 >
 > Tool to help automount the device given from the label

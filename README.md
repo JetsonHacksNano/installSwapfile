@@ -1,5 +1,5 @@
 # installSwapfile
-<b><em>Note: While you can still use this method to add a swap file, it is not recommended for recent releases. </b>Newer versions of L4T/JetPack have swap memory as part of the default distribution, implemented through zram. The swap memory by default is 2GB. If you want to change the amount of space allocated please see: https://github.com/JetsonHacksNano/resizeSwapMemory </em>
+<b><em>Note: While you can still use this method to add a swap file, note that </b>newer versions of L4T/JetPack have swap memory as part of the default distribution, implemented through zram. The swap memory by default is 2GB. If you want to change the amount of space allocated please see: https://github.com/JetsonHacksNano/resizeSwapMemory </em> You may choose to use both a swapfile, as implemented here, and the zram swap memory at the same time.
 
 Install a swap file on the NVIDIA Jetson Nano Developer Kit. This should help with memory pressure issues.
 

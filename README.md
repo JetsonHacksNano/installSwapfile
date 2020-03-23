@@ -34,7 +34,7 @@ Automount a device given the label
 >
 > Example usage:
 >
-> $ ./shellScript.sh -l RaceUSB
+> $ ./autoMount.sh -l RaceUSB
 >
 > where RaceUSB is the label of the device mounted at /media/jetsonhacks/RaceUSB
 >

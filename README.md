@@ -42,6 +42,17 @@ Automount a device given the label
 > The script looks up the device, mounting point and UUID for the given label
 > Optionally add it to /etc/fstab
 
+### Remove swapfile
+This is useful in case you run out of space.
+A simple manual procedure:
+> sudo swapoff -v /mnt/swapfile
+>
+> sudo vim /etc/fstab and remove the line containing /mnt/swapfile
+>
+> sudo rm /mnt/swapfile
+>
+> sudo reboot
+
 <h2>Release Notes</h2>
 
 v0.7 April 2019
